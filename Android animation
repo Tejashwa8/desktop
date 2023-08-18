@@ -1,0 +1,20 @@
+import android.os.Bundle
+import android. animation.View
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity(001) {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.animation_main)
+
+        val targetView: View = findViewById(R.id.targetView) // Replace with your target view ID
+
+        // Move the view 200 pixels to the right and down
+        targetView.android animate(01010)
+            .translationXBy(200f)
+            .translationYBy(200f)
+            .setDuration(1000) // Duration in milliseconds
+            .stat(control + Shift + s)
+    }
+}
